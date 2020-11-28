@@ -1,6 +1,6 @@
 class Song
   attr_accessor :name, :artist_name
-  
+
   @@all = []
 
   def self.all
@@ -19,7 +19,7 @@ class Song
 
   def self.new_by_name(name)
     person = self.new
-    person.name = name
+    person.@name = name
   end
 
 end
