@@ -8,13 +8,9 @@ class Song
     @@all
   end
 
-  def self.name
-    @name = name
-  end
-
   def self.new_by_name(name)
-    song = self.new
-    song.name = name
+    name = self.new
+    name.name = name
   end
 
   def save
