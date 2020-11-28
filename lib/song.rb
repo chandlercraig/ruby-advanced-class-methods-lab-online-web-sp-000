@@ -48,7 +48,13 @@ class Song
   end
 
   def self.new_from_filename (file_name+".mp3")
-    
+    song = self.new
   end
+
+#   2.6.1 :007 > string
+#  => "Taylor Swift - Blank Space.mp3"
+# 2.6.1 :008 > strspo = string.split(/\-|\./)
+#  => ["Taylor Swift ", " Blank Space", "mp3"]
+# 2.6.1 :009 >
 
 end
