@@ -40,6 +40,7 @@ class Song
       self.create_by_name(song_name)
     else
       self.all.each {|song| return song if song.name == song_name}
+    end
   end
 
 end
