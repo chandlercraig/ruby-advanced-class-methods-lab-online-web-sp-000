@@ -56,7 +56,7 @@ class Song
     song
   end
 
-  def create_from_filename(file_name)
+  def self.create_from_filename(file_name)
     song = self.new
     song_data_arr = file_name.split(/\s-\s|\./)
     song.name = song_data_arr[1]
