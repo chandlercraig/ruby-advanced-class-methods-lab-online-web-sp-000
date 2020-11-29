@@ -52,6 +52,7 @@ class Song
     song_data_arr = file_name.split(/\s-\s|\./)
     song.name = song_data_arr[1]
     song.artist_name = song_data_arr[0]
+    song
   end
 
 #   2.6.1 :007 > string
