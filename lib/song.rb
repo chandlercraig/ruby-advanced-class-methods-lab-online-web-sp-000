@@ -52,11 +52,16 @@ class Song
     song_data_arr = file_name.split(/\s-\s|\./)
     song.name = song_data_arr[1]
     song.artist_name = song_data_arr[0]
+    @@all << song
     song
   end
 
   def create_from_filename(file_name)
-
+    song = self.new
+    song_data_arr = file_name.split(/\s-\s|\./)
+    song.name = song_data_arr[1]
+    song.artist_name = song_data_arr[0]
+    song
   end
 
 end
