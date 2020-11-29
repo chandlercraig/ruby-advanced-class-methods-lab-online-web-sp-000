@@ -47,7 +47,7 @@ class Song
     @@all.sort_by {|song| song.name}
   end
 
-  def self.new_from_filename (file_name)
+  def self.new_from_filename(file_name)
     song = self.new
     song_data_arr = file_name.split(/\s-\s|\./)
     song.name = song_data_arr[1]
@@ -55,10 +55,8 @@ class Song
     song
   end
 
-#   2.6.1 :007 > string
-#  => "Taylor Swift - Blank Space.mp3"
-# 2.6.1 :008 > strspo = string.split(/\-|\./)
-#  => ["Taylor Swift ", " Blank Space", "mp3"]
-# 2.6.1 :009 >
+  def create_from_filename(file_name)
+    
+  end
 
 end
